@@ -9,19 +9,23 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="https://www.expansecontracting.com/images/expanse_small_logo_website.png" alt="Expanse Contracting Logo">
-            <span>Expanse Contracting</span>
+        <div class="logo-container">
+          <img src="https://www.expansecontracting.com/images/expanse_small_logo_website.png" alt="Expanse Logo" class="logo">
         </div>
-        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-        <nav class="mobile-menu">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <a href="#quote" class="cta">Get a Quote</a>
+        <nav class="navigation">
+          <button class="hamburger" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
     <main>
         <section class="project-showcase" id="project-showcase">
             <!-- Projects will be dynamically loaded here -->

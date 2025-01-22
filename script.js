@@ -105,27 +105,26 @@ function setupCarousel(carousel) {
 }
 
 // JavaScript for Hamburger Menu Toggle
-document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.querySelector('.hamburger-menu');
-    const menuDropdown = document.querySelector('.menu-dropdown');
-
-    // Toggle menu on click
-    menuButton.addEventListener('click', function () {
-        menuDropdown.classList.toggle('show');
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+  
+    // Toggle menu on hamburger click
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
     });
-
+  
+    // Close menu when clicking a link
+    navMenu.addEventListener("click", (event) => {
+      if (event.target.tagName === "A") {
+        navMenu.classList.remove("active");
+      }
+    });
+  
     // Close menu when clicking outside of it
-    document.addEventListener('click', function (event) {
-        if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
-            menuDropdown.classList.remove('show');
-        }
+    document.addEventListener("click", (event) => {
+      if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+        navMenu.classList.remove("active");
+      }
     });
-
-    // Close menu when a menu item is clicked
-    const menuItems = menuDropdown.querySelectorAll('li a');
-    menuItems.forEach(item => {
-        item.addEventListener('click', function () {
-            menuDropdown.classList.remove('show');
-        });
-    });
-});
+  });
