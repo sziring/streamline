@@ -7,10 +7,20 @@
   },
   {
     "title": "Project Two",
+    "description": "blah, blah, blah",
+
     "images": ["image4.jpg", "image5.jpg", "image6.jpg"]
   },
   {
     "title": "Project Three",
+    "description": "more to comer",
+
+    "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
+  },
+  {
+    "title": "and so on",
+    "description": "more to comer",
+
     "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
   }
 ]
