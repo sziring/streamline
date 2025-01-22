@@ -108,23 +108,30 @@ function setupCarousel(carousel) {
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
+    const overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    document.body.appendChild(overlay);
   
-    // Toggle menu on hamburger click
+    // Toggle menu and overlay
     hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
+      const isActive = navMenu.classList.toggle("active");
+      overlay.classList.toggle("active", isActive);
+      document.body.style.overflow = isActive ? "hidden" : "auto"; // Prevent scrolling
     });
   
-    // Close menu when clicking a link
+    // Close menu and overlay when clicking on the overlay
+    overlay.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      overlay.classList.remove("active");
+      document.body.style.overflow = "auto";
+    });
+  
+    // Close menu when clicking on a menu link
     navMenu.addEventListener("click", (event) => {
       if (event.target.tagName === "A") {
         navMenu.classList.remove("active");
-      }
-    });
-  
-    // Close menu when clicking outside of it
-    document.addEventListener("click", (event) => {
-      if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
-        navMenu.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "auto";
       }
     });
   });
