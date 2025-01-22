@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* General reset */
+body, h2, div, img, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.project-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.project-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 80vw; /* Limit width to 80% of the viewport */
+    margin: 0 auto;
+}
+
+.project-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensure the container for all images scales correctly */
+}
+
+.carousel-images img {
+    flex: 0 0 100%; /* Ensure only one image is shown at a time */
+    max-width: 100%; /* Allow images to resize proportionally to the container */
+    height: 80vh; /* Resize image height to 80% of the viewport */
+    object-fit: contain; /* Ensure the entire image fits within the container */
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.carousel-dots button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-dots button.active {
+    background-color: #333;
+}
+
+.carousel-dots button:hover {
+    background-color: #999;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 800px) {
+    .project-showcase {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 1rem; /* Reduce the gap between projects */
+    }
+
+    .project-container {
+        max-width: 100%; /* Allow full width of each column */
+        margin: 0; /* Remove extra margins */
+    }
+
+    .carousel {
+        width: 100%; /* Ensure carousel fits within its parent container */
+    }
+
+    .carousel-images img {
+        flex: 0 0 100%; /* Ensure only one image is shown at a time */
+        max-width: 100%; /* Allow images to resize proportionally to the container */
+        height: 80vh; /* Resize image height to 80% of the viewport */
+        object-fit: contain; /* Ensure the entire image fits within the container */
+    }
+}
