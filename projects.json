@@ -1,15 +1,16 @@
 [
   
   {
-    "title": "Project 1",
+    "title": "Project One",
+   "description": "Nine foot batten wall in two story foyer",
     "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
   },
   {
-    "title": "Project 2",
+    "title": "Project Two",
     "images": ["image4.jpg", "image5.jpg", "image6.jpg"]
   },
   {
-    "title": "Project 3",
+    "title": "Project Three",
     "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
   }
 ]
