@@ -6,10 +6,10 @@
     "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
   },
   {
-    "title": "Project Two",
-    "description": "blah, blah, blah",
-
-    "images": ["image4.jpg", "image5.jpg", "image6.jpg"]
+    "title": "Basement Finishing + Full Bath",
+    "description": "From unfinished storage to 1000+ sqft of living space, full bath, gym, and plenty of storage.",
+    "images": ["image3.jpg", "image4.jpg"],
+    "videos": ["https://www.youtube.com/embed/j-rpQZZYuoI"]
   },
   {
     "title": "Project Three",
