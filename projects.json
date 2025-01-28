@@ -1,26 +1,91 @@
 [
   
   {
-    "title": "Project One",
+    "title": "Batten Wall",
    "description": "Nine foot batten wall in two story foyer",
-    "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
+   "folder": "battenwall",
+   "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
   },
   {
     "title": "Basement Finishing + Full Bath",
     "description": "From unfinished storage to 1000+ sqft of living space, full bath, gym, and plenty of storage.",
-    "images": ["image3.jpg", "image4.jpg"],
+    "folder": "wprospect",
+    "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"],
     "videos": ["https://www.youtube.com/embed/j-rpQZZYuoI"]
   },
   {
-    "title": "Project Three",
-    "description": "more to comer",
+    "title": "Basement finishing",
+    "description": "We'll transform your unfinished or dated basement with the look and feel of something modern.",
+    "folder": "c_latern",
+    "images": ["new_closet.jpg"],
+    "videos": ["https://www.youtube.com/embed/O4fGmHx3CLM"]
 
-    "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
   },
   {
-    "title": "and so on",
-    "description": "more to comer",
+    "title": "Basement finishing",
+    "description": "Dividing the basement into multiple modern rooms.",
+    "folder": "jk",
 
-    "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
-  }
+    "images": ["backwall_finished1.jpg", "backwall_before.jpg",  "fullwall_finished1.jpg", "fullwall_finished2.jpg","fullwall_during1.jpg", "steps_finished1.jpg","steps_finished2.jpg","steps_during3.jpg"]
+  },
+  {
+    "title": "Basement finishing",
+    "description": "We'll transform your unfinished or dated basement with the look and feel of something modern.",
+    "folder": "home",
+    "images": ["facing_play_from_weight_after.jpg", "facing_play_from_weight_before.jpg", "facing_utility_space_after.jpg", "facing_utility_space_before.jpg"]
+  },
+  {
+    "title": "Custom built-ins and drink station",
+    "description": "Converting an unused dining room into a study with drink station.",
+    "folder": "study",
+
+    "images": ["after.jpg", "after2.jpg", "after3.jpg", "cabinet_upper_after.jpg", "shelving_after.jpg", "IMG_4678.jpg"]
+  },
+  {
+    "title": "Trex deck with privacy wall",
+    "description": "Trex deck with aluminum railing and a privacy wall",
+    "folder": "trex_aluminum",
+    "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7b.jpg", "8b.jpg"]
+  },
+  {
+    "title": "Trex deck with composite rails",
+    "description": "Trex deck with composite rails; rehung joists for boards to all face the same direction.",
+"folder":"trex_composite",
+    "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "1b.jpg", "4b.jpg", "5b.jpg"]
+  },
+  
+  {
+    "title": "Attic conversions",
+    "description": "Have an unfinished attic space that would be better served as bonus living space? We can help with that.",
+"folder":"attic",
+    "images": ["double_windows_after.jpg", "double_windows_before.jpg", "wall_no_windows_after.jpg", "before.jpg"]
+  },
+  {
+    "title": "Kitchens",
+    "description": "Kitchens are were most people spend their time, it should be just as you imageined it.",
+"folder": "kitchen",
+    "images": ["kitchen 016.jpg", "kitchen 000,jpg", "kitchen 017.jpg", "kitchen 206.jpg", "kitchen 201.jpg"]
+  },
+
+{
+  "title": "Bathroom remodeling",
+  "description": "Because you deserve to be pampered",
+"folder":"bathroom",
+  "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
+},
+{
+  "title": "Bathroom remodeling",
+  "description": "Because you deserve to be pampered",
+"folder":"bathroom",
+  "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
+},
+
+
+{
+  "title": "K",
+  "description": "K",
+
+  "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
+}
+
 ]

@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const projectShowcase = document.querySelector(".project-showcase");
 
-  // Fetch projects.json and handle errors
   const fetchProjects = async () => {
     try {
       const response = await fetch("projects.json");
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add images to the carousel
       project.images.forEach((image) => {
         const img = document.createElement("img");
-        img.src = image;
+        img.src = `images/${project.folder}/${image}`; // Prepend folder to the image path
         img.alt = `Project ${index + 1} Image`;
         carouselImages.appendChild(img);
       });
@@ -138,7 +137,6 @@ document.addEventListener("DOMContentLoaded", () => {
     showItem(currentIndex); // Initialize the first item
   };
 
-  // Fetch and render projects
   fetchProjects().then(renderProjects);
 });
 
