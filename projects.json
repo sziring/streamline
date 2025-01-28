@@ -10,7 +10,7 @@
     "title": "Basement Finishing + Full Bath",
     "description": "From unfinished storage to 1000+ sqft of living space, full bath, gym, and plenty of storage.",
     "folder": "wprospect",
-    "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"],
+    "images": ["basement_f.jpg"],
     "videos": ["https://www.youtube.com/embed/j-rpQZZYuoI"]
   },
   {
@@ -58,34 +58,13 @@
     "title": "Attic conversions",
     "description": "Have an unfinished attic space that would be better served as bonus living space? We can help with that.",
 "folder":"attic",
-    "images": ["double_windows_after.jpg", "double_windows_before.jpg", "wall_no_windows_after.jpg", "before.jpg"]
+    "images": ["double_windows_after.jpg", "double_windows_before.jpg", "wall_no_windows_after.jpg", "wall_no_windows_before.jpg"]
   },
   {
     "title": "Kitchens",
     "description": "Kitchens are were most people spend their time, it should be just as you imageined it.",
 "folder": "kitchen",
-    "images": ["kitchen 016.jpg", "kitchen 000,jpg", "kitchen 017.jpg", "kitchen 206.jpg", "kitchen 201.jpg"]
-  },
-
-{
-  "title": "Bathroom remodeling",
-  "description": "Because you deserve to be pampered",
-"folder":"bathroom",
-  "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
-},
-{
-  "title": "Bathroom remodeling",
-  "description": "Because you deserve to be pampered",
-"folder":"bathroom",
-  "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
-},
-
-
-{
-  "title": "K",
-  "description": "K",
-
-  "images": ["image7.jpg", "image8.jpg", "image9.jpg"]
-}
+    "images": ["kitchen 016.jpg", "kitchen 000.jpg", "kitchen 017.jpg", "kitchen 206.jpg", "kitchen 201.jpg"]
+  }
 
 ]

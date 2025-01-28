@@ -167,8 +167,8 @@ header {
 }
 
 .project-image-container img {
-  width: auto%;
-  height: auto%;
+  width: auto;
+  height: auto;
   object-fit: cover; /* Ensures the image fills the container proportionally */
   border-bottom: 1px solid #ddd; /* Optional separator line */
 }
