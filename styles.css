@@ -157,7 +157,7 @@ header {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  height: 500px; /* Fixed height for each project box */
+  height: 600px; /* Fixed height for each project box */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 /* Image Section */
