@@ -6,6 +6,24 @@
    "folder": "battenwall",
    "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
   },
+
+  {
+    "title": "Complete home renovation",
+    "description": "A complete remodel of the home inside and out, top to bottom. From the electric and plumbing to the insulation and walls.",
+    "folder": "crof",
+    "images": ["basement_f.jpg"],
+    "videos": ["https://www.youtube.com/embed/udOx8O1IKbk"]
+  },
+
+  {
+    "title": "Master Bath remodel",
+    "description": "Complete bathroom remodel. Swapped dated Jacuzzi and ill lit shower from the 90's to a soaking tub, marble flooring,  and European linear drain system in the shower.",
+    "folder": "mont",
+    "images": ["basement_f.jpg"],
+    "videos": ["https://www.youtube.com/embed/k3ZGGpDR00g"]
+  },
+  
+
   {
     "title": "Basement Finishing + Full Bath",
     "description": "From unfinished storage to 1000+ sqft of living space, full bath, gym, and plenty of storage.",
