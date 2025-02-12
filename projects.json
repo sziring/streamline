@@ -11,7 +11,7 @@
     "title": "Complete home renovation",
     "description": "A complete remodel of the home inside and out, top to bottom. From the electric and plumbing to the insulation and walls.",
     "folder": "crof",
-    "images": ["basement_f.jpg"],
+    "images": [],
     "videos": ["https://www.youtube.com/embed/udOx8O1IKbk"]
   },
 
@@ -19,7 +19,7 @@
     "title": "Master Bath remodel",
     "description": "Complete bathroom remodel. Swapped dated Jacuzzi and ill lit shower from the 90's to a soaking tub, marble flooring,  and European linear drain system in the shower.",
     "folder": "mont",
-    "images": ["basement_f.jpg"],
+    "images": [],
     "videos": ["https://www.youtube.com/embed/k3ZGGpDR00g"]
   },
   
