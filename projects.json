@@ -31,19 +31,20 @@
     "images": ["basement_f.jpg"],
     "videos": ["https://www.youtube.com/embed/j-rpQZZYuoI"]
   },
+
   {
     "title": "Basement finishing",
     "description": "We'll transform your unfinished or dated basement with the look and feel of something modern.",
-    "folder": "c_latern",
-    "images": ["new_closet.jpg"],
-    "videos": ["https://www.youtube.com/embed/O4fGmHx3CLM"]
+    "folder": "d_basement",
+    "images": ["d_basement.jpg", "d_basement_1.jpg"],
+    "videos": ["https://www.youtube.com/embed/9E7FlmTRZ4U"]
 
   },
+ 
   {
     "title": "Basement finishing",
     "description": "Dividing the basement into multiple modern rooms.",
     "folder": "jk",
-
     "images": ["backwall_finished1.jpg", "backwall_before.jpg",  "fullwall_finished1.jpg", "fullwall_finished2.jpg","fullwall_during1.jpg", "steps_finished1.jpg","steps_finished2.jpg","steps_during3.jpg"]
   },
   {
@@ -51,6 +52,14 @@
     "description": "We'll transform your unfinished or dated basement with the look and feel of something modern.",
     "folder": "home",
     "images": ["facing_play_from_weight_after.jpg", "facing_play_from_weight_before.jpg", "facing_utility_space_after.jpg", "facing_utility_space_before.jpg"]
+  },
+  {
+    "title": "Basement finishing",
+    "description": "We'll transform your unfinished or dated basement with the look and feel of something modern.",
+    "folder": "c_latern",
+    "images": ["new_closet.jpg"],
+    "videos": ["https://www.youtube.com/embed/O4fGmHx3CLM"]
+
   },
   {
     "title": "Custom built-ins and drink station",
