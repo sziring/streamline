@@ -174,27 +174,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // rotate messaging
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Check if the message has already been shown in this session
-  function checkOrientationAndShow() {
-    if (sessionStorage.getItem("rotateMessageShown")) return;
-    
-    // If the device is in portrait mode, display the message
-    if (window.matchMedia("(orientation: portrait)").matches) {
-      var rotateMessage = document.getElementById("rotate-message");
-      rotateMessage.classList.add("show");
-      // After 3 seconds (animation duration), hide permanently and set flag
-      setTimeout(function(){
-        rotateMessage.style.display = "none";
-        sessionStorage.setItem("rotateMessageShown", "true");
-      }, 3000);
+    // Helper: determine if the screen is in portrait mode
+    function isPortrait() {
+      return window.innerHeight > window.innerWidth;
     }
-  }
-  
-  // Initial check on page load
-  checkOrientationAndShow();
-  
-  // Listen for orientation change or resize events (for better compatibility)
-  window.addEventListener("orientationchange", checkOrientationAndShow);
-  window.addEventListener("resize", checkOrientationAndShow);
-});
+
+    function showRotateMessageOnce() {
+      // Only show if we haven't already shown it this session
+      if (sessionStorage.getItem("rotateMessageShown")) return;
+
+      if (isPortrait()) {
+        var overlay = document.getElementById("rotate-message");
+        // Set display to flex so it becomes an overlay
+        overlay.style.display = "flex";
+        // Add animation class to fade out over 3 seconds
+        overlay.classList.add("fade-out");
+
+        // After 3 seconds, hide permanently and set flag
+        setTimeout(function () {
+          overlay.style.display = "none";
+          sessionStorage.setItem("rotateMessageShown", "true");
+        }, 3000);
+      }
+    }
+
+    // Run on initial page load
+    document.addEventListener("DOMContentLoaded", showRotateMessageOnce);
+    
+    // Optionally, listen to resize events, but ensure the overlay doesn't re-show if already flagged
+    window.addEventListener("resize", function() {
+      if (!sessionStorage.getItem("rotateMessageShown")) {
+        // If rotated to portrait and the message hasn't been shown yet, show it.
+        if (isPortrait()) {
+          showRotateMessageOnce();
+        }
+      }
+    });

@@ -325,18 +325,13 @@ header {
       z-index: 9999;
       justify-content: center;
       align-items: center;
-      opacity: 1;
     }
-    
-    /* When the message should show, add the "show" class */
-    .show {
-      display: flex;
+    /* Fade out animation class */
+    .fade-out {
       animation: fadeOut 3s forwards;
     }
-    
-    /* Keyframes for fading out */
     @keyframes fadeOut {
-      0%   { opacity: 1; }
-      80%  { opacity: 1; }
+      0% { opacity: 1; }
+      80% { opacity: 1; }
       100% { opacity: 0; }
     }
