@@ -37,7 +37,7 @@
     "description": "We'll transform your unfinished or dated basement with the look and feel of something modern.",
     "folder": "d_basement",
     "images": ["d_basement.jpg", "d_basement_1.jpg"],
-    "videos": ["https://www.youtube.com/embed/9E7FlmTRZ4U"]
+    "videos": ["https://www.youtube.com/embed/mB-39gH7C_Q"]
 
   },
  
@@ -65,7 +65,6 @@
     "title": "Custom built-ins and drink station",
     "description": "Converting an unused dining room into a study with drink station.",
     "folder": "study",
-
     "images": ["after.jpg", "after2.jpg", "after3.jpg", "cabinet_upper_after.jpg", "shelving_after.jpg", "IMG_4678.jpg"]
   },
   {
@@ -77,20 +76,20 @@
   {
     "title": "Trex deck with composite rails",
     "description": "Trex deck with composite rails; rehung joists for boards to all face the same direction.",
-"folder":"trex_composite",
+    "folder":"trex_composite",
     "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "1b.jpg", "4b.jpg", "5b.jpg"]
   },
   
   {
     "title": "Attic conversions",
     "description": "Have an unfinished attic space that would be better served as bonus living space? We can help with that.",
-"folder":"attic",
+    "folder":"attic",
     "images": ["double_windows_after.jpg", "double_windows_before.jpg", "wall_no_windows_after.jpg", "wall_no_windows_before.jpg"]
   },
   {
     "title": "Kitchens",
     "description": "Kitchens are were most people spend their time, it should be just as you imageined it.",
-"folder": "kitchen",
+    "folder": "kitchen",
     "images": ["kitchen 016.jpg", "kitchen 000.jpg", "kitchen 017.jpg", "kitchen 206.jpg", "kitchen 201.jpg"]
   }
 
