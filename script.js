@@ -171,3 +171,30 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 });
+
+// rotate messaging
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Check if the message has already been shown in this session
+  function checkOrientationAndShow() {
+    if (sessionStorage.getItem("rotateMessageShown")) return;
+    
+    // If the device is in portrait mode, display the message
+    if (window.matchMedia("(orientation: portrait)").matches) {
+      var rotateMessage = document.getElementById("rotate-message");
+      rotateMessage.classList.add("show");
+      // After 3 seconds (animation duration), hide permanently and set flag
+      setTimeout(function(){
+        rotateMessage.style.display = "none";
+        sessionStorage.setItem("rotateMessageShown", "true");
+      }, 3000);
+    }
+  }
+  
+  // Initial check on page load
+  checkOrientationAndShow();
+  
+  // Listen for orientation change or resize events (for better compatibility)
+  window.addEventListener("orientationchange", checkOrientationAndShow);
+  window.addEventListener("resize", checkOrientationAndShow);
+});
