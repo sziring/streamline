@@ -27,6 +27,7 @@ header {
     width: 100%; /* Ensure the header spans the full width of the page */
     z-index: 1000; /* Keep the header above other content */
     box-sizing: border-box; /* Ensure padding is included in width */
+    transition: top 0.3s ease-in-out; /* Add transition here */
 
   }
   

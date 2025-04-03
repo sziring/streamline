@@ -210,3 +210,33 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
+    
+  // for nav bar to hide when scrolling down the page and reappear when scrolling back up
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector("header");
+    let lastScrollY = window.scrollY;
+    
+    // Get the full height of the header and calculate the hidden position (keeping 3px visible)
+    const headerHeight = header.offsetHeight;
+    const hiddenTop = -(headerHeight - 3);
+    
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
+      
+      // If scrolling down and scrolled past the header height, roll up the header.
+      if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
+        header.style.top = hiddenTop + "px";
+      } else {
+        // When scrolling up, show the header.
+        header.style.top = "0";
+      }
+      
+      lastScrollY = currentScrollY;
+    });
+    
+    // Clicking anywhere on the header (i.e. on the 3px sliver) restores the header.
+    header.addEventListener("click", () => {
+      header.style.top = "0";
+    });
+  });
